@@ -51,8 +51,8 @@ GROMACS
 
 - Download the latest version that can be patched with Plumed and decompress the code
 	wget ftp://ftp.gromacs.org/pub/gromacs/gromacs-2022.3.tar.gz
-	tar -zxvf gromacs-2022.3.tar.gz
-	cd gromacs-2022.3
+	tar -zxvf gromacs-2024.3.tar.gz
+	cd gromacs-2024.3
 
 - patch plumed and choose the appropriate version of gromacs in the menu
 	plumed patch -p --runtime
@@ -70,10 +70,9 @@ follow the guide and run this in your terminal
 with X.X being your cuda version.
 
 - configure the installation with 
-	cmake .. -DGMX_BUILD_OWN_FFTW=ON -DGMX_MPI=on -DGMX_OPENMP=ON -DGMX_GPU=CUDA -DCMAKE_INSTALL_PREFIX=/path-to-your-folder/gromacs-2022.3/install_single_cuda cmake … -DGMX_BUILD_OWN_FFTW=ON -DREGRESSIONTEST_DOWNLOAD=ON -DGMX_GPU=CUDA
+	cmake .. -DGMX_BUILD_OWN_FFTW=ON -DGMX_MPI=on -DGMX_OPENMP=ON -DGMX_GPU=CUDA -DCMAKE_INSTALL_PREFIX=/path-to-your-folder/gromacs-2024.3/install_single_cuda cmake -DCUDAToolkit_ROOT=/usr/local/cuda -DCUDA_TOOLKIT_ROOT_DIR=/usr/local/cuda
 If, for example, you want to install it on cpu only and use double precision
-	cmake .. -DGMX_BUILD_OWN_FFTW=ON -DGMX_MPI=on -DGMX_OPENMP=ON -DGMX_GPU=OFF -DGMX_DOUBLE=on -DCMAKE_INSTALL_PREFIX=/path-to-your-folder/gromacs-2022.3/install_double_cpu cmake … -DGMX_BUILD_OWN_FFTW=ON -DREGRESSIONTEST_DOWNLOAD=ON -DGMX_GPU=CUDA
-
+	cmake .. -DGMX_BUILD_OWN_FFTW=ON -DGMX_MPI=on -DGMX_OPENMP=ON -DGMX_GPU=OFF -DGMX_DOUBLE=on -DCMAKE_INSTALL_PREFIX=/path-to-your-folder/gromacs-2024.3/install_double_cpu cmake 
 
 - compile and install
 	make
