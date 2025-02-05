@@ -82,11 +82,16 @@ If, for example, you want to install it on cpu only and use double precision
 
 Extra tips
 
-- to use PLUMED and GROMACS, add to your ~/.bashrc
+- to use PLUMED and GROMACS (GPU - Version), create a gpu_gromacs.sh 
 	source /path-to-your-folder/plumed2-master/sourceme.sh
 	source /path-to-your-folder/plumed2-master/libtorch/sourceme.sh    
 	export PATH="/usr/local/cuda-X.X/bin:$PATH"
-	source /path-to-your-folder/gromacs-2022.3/install_single_cuda/bin/GMXRC  
+	source /path-to-your-folder/gromacs-2022.3/install_single_cuda/bin/GMXRC
+
+- to use PLUMED and GROMACS (CPU - Version), create a cpu_gromacs.sh 
+	source /path-to-your-folder/plumed2-master/sourceme.sh
+	source /path-to-your-folder/plumed2-master/libtorch/sourceme.sh    
+	source /path-to-your-folder/gromacs-2022.3/install_double_cpu/bin/GMXRC
 
 - if you have multiple versions, you can load them at will through alias such as
 	alias splumed='source /path-to-your-folder/plumed2-master/sourceme.sh; source ...'
