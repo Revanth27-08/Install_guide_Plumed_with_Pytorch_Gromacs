@@ -50,7 +50,7 @@ so that plumed is compiled and finally run
 GROMACS
 
 - Download the latest version that can be patched with Plumed and decompress the code
-	wget ftp://ftp.gromacs.org/pub/gromacs/gromacs-2022.3.tar.gz
+	wget ftp://ftp.gromacs.org/pub/gromacs/gromacs-2024.3.tar.gz
 	tar -zxvf gromacs-2024.3.tar.gz
 	cd gromacs-2024.3
 
@@ -86,12 +86,12 @@ Extra tips
 	source /path-to-your-folder/plumed2-master/sourceme.sh
 	source /path-to-your-folder/plumed2-master/libtorch/sourceme.sh    
 	export PATH="/usr/local/cuda-X.X/bin:$PATH"
-	source /path-to-your-folder/gromacs-2022.3/install_single_cuda/bin/GMXRC
+	source /path-to-your-folder/gromacs-2024.3/install_single_cuda/bin/GMXRC
 
 - to use PLUMED and GROMACS (CPU - Version), create a cpu_gromacs.sh 
 	source /path-to-your-folder/plumed2-master/sourceme.sh
 	source /path-to-your-folder/plumed2-master/libtorch/sourceme.sh    
-	source /path-to-your-folder/gromacs-2022.3/install_double_cpu/bin/GMXRC
+	source /path-to-your-folder/gromacs-2024.3/install_double_cpu/bin/GMXRC
 
 - if you have multiple versions, you can load them at will through alias such as
 	alias splumed='source /path-to-your-folder/plumed2-master/sourceme.sh; source ...'
