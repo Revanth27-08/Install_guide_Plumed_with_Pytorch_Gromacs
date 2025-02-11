@@ -40,7 +40,7 @@ On HPC resources, you might encouter further trouble with the compiler. A soluti
 
 - when successful, in the terminal run
 	source libtorch/sourceme.sh
-	make
+	make -j (#use available cores)
 so that plumed is compiled and finally run
 	source sourceme.sh
 	
