@@ -37,7 +37,6 @@ Also you will need
 - check in the output of the config_pytorch.sh if libtorch is enabled (checking libtorch with -lc10... yes) and mpi is enabled (PLUMED will be compiled using MPI). These two are the most problematic usually.
 If not, try loading another compiler and/or openmpi version. 
 On HPC resources, you might encouter further trouble with the compiler. A solution is to disable the ABI libraries.
-In case, send me an email at valeriorizzi33@gmail.com and ask me. 
 
 - when successful, in the terminal run
 	source libtorch/sourceme.sh
