@@ -40,7 +40,7 @@ On HPC resources, you might encouter further trouble with the compiler. A soluti
 
 - when successful, in the terminal run
 	source libtorch/sourceme.sh
-	make -j (#use available cores)
+	make -j (#use the available cores)
 so that plumed is compiled and finally run
 	source sourceme.sh
 	
@@ -74,7 +74,7 @@ If, for example, you want to install it on cpu only and use double precision
 	cmake .. -DGMX_BUILD_OWN_FFTW=ON -DGMX_MPI=on -DGMX_OPENMP=ON -DGMX_GPU=OFF -DGMX_DOUBLE=on -DCMAKE_INSTALL_PREFIX=/path-to-your-folder/gromacs-2024.3/install_double_cpu cmake 
 
 - compile and install
-	make
+	make -j (#use the avaliable cores)
 	make install
 
 -----------------
