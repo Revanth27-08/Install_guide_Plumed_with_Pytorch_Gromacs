@@ -69,7 +69,7 @@ follow the guide and run this in your terminal
 with X.X being your cuda version.
 
 - configure the installation with 
-	cmake .. -DGMX_BUILD_OWN_FFTW=ON -DGMX_MPI=on -DGMX_OPENMP=ON -DGMX_GPU=CUDA -DCMAKE_INSTALL_PREFIX=/path-to-your-folder/gromacs-2024.3/install_single_cuda cmake -DCUDAToolkit_ROOT=/usr/local/cuda -DCUDA_TOOLKIT_ROOT_DIR=/usr/local/cuda
+	cmake .. -DGMX_BUILD_OWN_FFTW=ON -DGMX_MPI=on -DGMX_OPENMP=ON -DGMX_GPU=CUDA -DCMAKE_INSTALL_PREFIX=/path-to-your-folder/gromacs-2024.3/install_single_cuda -DCUDAToolkit_ROOT=/usr/local/cuda -DCUDA_TOOLKIT_ROOT_DIR=/usr/local/cuda
 If, for example, you want to install it on cpu only and use double precision
 	cmake .. -DGMX_BUILD_OWN_FFTW=ON -DGMX_MPI=on -DGMX_OPENMP=ON -DGMX_GPU=OFF -DGMX_DOUBLE=on -DCMAKE_INSTALL_PREFIX=/path-to-your-folder/gromacs-2024.3/install_double_cpu cmake 
 
